@@ -20,7 +20,7 @@ JSON:
 * Total: Number of results returned. (`type:<int>`)
 * Results: List of resutls returned. (`type:<list>` of `type:<dict>`)
 
-##PassiveDNS Functionality
+## PassiveDNS Functionality
 There are four "simple" methods for querying pDNS in this library:
 
 * `d_ip_query`
@@ -135,7 +135,7 @@ Examples:
 * `oscQuery.d_luc_query('last_seen:2022-01-01 AND qname.tokens:example',<api_key>,page=True)`
 * `oscQuery.d_luc_query('type:cname AND qname.right:mydomain.tld',<api_key>,size=5,fields='date,last_seen,qname')`
 
-##PassiveBGP Functionality
+## PassiveBGP Functionality
 There are three "simple" methods for querying pDNS in this library:
 
 * `b_as_query`
