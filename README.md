@@ -12,6 +12,13 @@ In order to use this library users will need the following:
 
 This library is primarily developed and maintained on linux (Ubuntu and Fedora) and Apple MacOS (Big Sur and Monterey) systems. Limited testing is done on Windows based systems.
 
+Query results format:
+
+JSON
+Info: Information about how many results were found and returned (type:<string>)
+Total: Number of results returned. (type:<int>)
+Results: List of resutls returned. (type:<list> of type:<dict>)
+
 ##PassiveDNS Functionality
 There are four "simple" methods for querying pDNS in this library:
 
