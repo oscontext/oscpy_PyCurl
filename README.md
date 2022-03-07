@@ -262,7 +262,7 @@ This is not intended to be an exhaustive guid to searching the OSC API. If you n
 
 Open Source Context offers training to almost any orginization (not just customers) on how to improve security operations through the use of increased knowledge, open source tooling, automation, passiveDNS and passiveBGP. Although the training is given using the OSC API and tooling, the concepts taught are applicable across any reliable pDNS or pBGP data set.
 
-### TODO:
+### TO DO:
 OSC indends to maintain and improve this library. Things on the roadmap are:
 
 * Allow user to specify maximum number of queries and/or results in pagniated queries.
