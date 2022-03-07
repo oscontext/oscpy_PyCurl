@@ -14,10 +14,11 @@ This library is primarily developed and maintained on linux (Ubuntu and Fedora) 
 
 Query results format:
 
-JSON
-Info: Information about how many results were found and returned (type:<string>)
-Total: Number of results returned. (type:<int>)
-Results: List of resutls returned. (type:<list> of type:<dict>)
+JSON:
+
+* Info: Information about how many results were found and returned (`type:<string>`)
+* Total: Number of results returned. (`type:<int>`)
+* Results: List of resutls returned. (`type:<list>` of `type:<dict>`)
 
 ##PassiveDNS Functionality
 There are four "simple" methods for querying pDNS in this library:
