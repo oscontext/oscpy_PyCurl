@@ -32,7 +32,7 @@ This method allows for the simple querying of an IP address or CIDR range.
 * query (required) - This should be the IP address or CIDR range being queried. (I.e. '192.168.0.1' or '192.168.0.0/24')
 * apikey (required) - The API key assigned to you by Open Source Context (more info at https://oscontext.com)
 * size (optional) - The number of results you would like returned, up to 100,000. The default is 100.
-* url (optional) - The base URI for the pDNS endpoint. The default setting will be correct for anyone who has not been assigned a custom endpoint. If you have any questions about this field, please contact your Open Source Context representative or `support@oscontext.com`.
+* url (optional) - The base URI for the pDNS endpoint. The default setting will be correct for anyone who has not been assigned a custom endpoint. If you have any questions about this field, please contact your Open Source Context representative or support@oscontext.com.
 * sort (optional) - The field and order you would like the results sorted by. The default is last_seen:desc
 * fields (optional) - This is where the user can specify the fields they want returned in the results. By default all fields other than the `_key` field are returned.
 * page (optional) - This is the option for a paginated query when results are over 100,000. Using this option will cause several things to happen:
@@ -52,7 +52,7 @@ This method allows for the simple querying of all hosts/subdomains for a single 
 * query (required) - This should be the name of the domain you would like to query. I.e `'example.com'` or `'mydomain.tld'`
 * apikey (required) - The API key assigned to you by Open Source Context (more info at https://oscontext.com)
 * size (optional) - The number of results you would like returned, up to 100,000. The default is 100.
-* url (optional) - The base URI for the pDNS endpoint. The default setting will be correct for anyone who has not been assigned a custom endpoint. If you have any questions about this field, please contact your Open Source Context representative or `support@oscontext.com`.
+* url (optional) - The base URI for the pDNS endpoint. The default setting will be correct for anyone who has not been assigned a custom endpoint. If you have any questions about this field, please contact your Open Source Context representative or support@oscontext.com.
 * sort (optional) - The field and order you would like the results sorted by. The default is last_seen:desc
 * fields (optional) - This is where the user can specify the fields they want returned in the results. By default all fields other than the `_key` field are returned.
 * page (optional) - This is the option for a paginated query when results are over 100,000. Using this option will cause several things to happen:
@@ -73,7 +73,7 @@ This method allows for the simple querying of a specific hostname.
 * query (required) - This should be the name of the host you would like to query. I.e `'www.example.com'` or `'mail.example.com'`
 * apikey (required) - The API key assigned to you by Open Source Context (more info at https://oscontext.com)
 * size (optional) - The number of results you would like returned, up to 100,000. The default is 100.
-* url (optional) - The base URI for the pDNS endpoint. The default setting will be correct for anyone who has not been assigned a custom endpoint. If you have any questions about this field, please contact your Open Source Context representative or `support@oscontext.com`.
+* url (optional) - The base URI for the pDNS endpoint. The default setting will be correct for anyone who has not been assigned a custom endpoint. If you have any questions about this field, please contact your Open Source Context representative or support@oscontext.com.
 * sort (optional) - The field and order you would like the results sorted by. The default is last_seen:desc
 * fields (optional) - This is where the user can specify the fields they want returned in the results. By default all fields other than the `_key` field are returned.
 * page (optional) - This is the option for a paginated query when results are over 100,000. Using this option will cause several things to happen:
@@ -93,7 +93,7 @@ This method allows for the simple querying of records which have a specific valu
 * query (required) - This should be the name of the value you would like to query. I.e `'www.example.com.cdn.redirect.tld'` or `'ns1.mydomain.tld'`
 * apikey (required) - The API key assigned to you by Open Source Context (more info at https://oscontext.com)
 * size (optional) - The number of results you would like returned, up to 100,000. The default is 100.
-* url (optional) - The base URI for the pDNS endpoint. The default setting will be correct for anyone who has not been assigned a custom endpoint. If you have any questions about this field, please contact your Open Source Context representative or `support@oscontext.com`.
+* url (optional) - The base URI for the pDNS endpoint. The default setting will be correct for anyone who has not been assigned a custom endpoint. If you have any questions about this field, please contact your Open Source Context representative or support@oscontext.com.
 * sort (optional) - The field and order you would like the results sorted by. The default is last_seen:desc
 * fields (optional) - This is where the user can specify the fields they want returned in the results. By default all fields other than the `_key` field are returned.
 * page (optional) - This is the option for a paginated query when results are over 100,000. Using this option will cause several things to happen:
@@ -113,7 +113,7 @@ This method allows for complex querying of the domainsquery endpoint using lucen
 * query (required) - This should be the name of the value you would like to query. I.e `'domain:example.com AND last_seen:[2022-01-01 TO 2022-01-13]'` or `'qname.right:mydomain.tld AND (type:mx OR type:txt)'`
 * apikey (required) - The API key assigned to you by Open Source Context (more info at https://oscontext.com)
 * size (optional) - The number of results you would like returned, up to 100,000. The default is 100.
-* url (optional) - The base URI for the pDNS endpoint. The default setting will be correct for anyone who has not been assigned a custom endpoint. If you have any questions about this field, please contact your Open Source Context representative or `support@oscontext.com`.
+* url (optional) - The base URI for the pDNS endpoint. The default setting will be correct for anyone who has not been assigned a custom endpoint. If you have any questions about this field, please contact your Open Source Context representative or support@oscontext.com.
 * sort (optional) - The field and order you would like the results sorted by. The default is last_seen:desc
 * fields (optional) - This is where the user can specify the fields they want returned in the results. By default all fields other than the `_key` field are returned.
 * page (optional) - This is the option for a paginated query when results are over 100,000. Using this option will cause several things to happen:
@@ -171,7 +171,7 @@ This method allows for the simple querying of a specific ASN.
 * query (required) - This should be the ASN being queried. (I.e. '12354')
 * apikey (required) - The API key assigned to you by Open Source Context (more info at https://oscontext.com)
 * size (optional) - The number of results you would like returned, up to 100,000. The default is 100.
-* url (optional) - The base URI for the pDNS endpoint. The default setting will be correct for anyone who has not been assigned a custom endpoint. If you have any questions about this field, please contact your Open Source Context representative or `support@oscontext.com`.
+* url (optional) - The base URI for the pDNS endpoint. The default setting will be correct for anyone who has not been assigned a custom endpoint. If you have any questions about this field, please contact your Open Source Context representative or support@oscontext.com.
 * sort (optional) - The field and order you would like the results sorted by. The default is last_seen:desc
 * fields (optional) - This is where the user can specify the fields they want returned in the results. This field should only be used if specifying the `mnl` (manual) return type.
 * rt (optional) - This is where the user can specify the output type they want returned. This includes the `sml`, `med`, `lrg`, `mnl`, or `dbg` types. If specifying `mnl`, make sure you provide the listed fields in the `fields` option.
@@ -192,7 +192,7 @@ This method allows for the simple querying of a specific prefix announcement.
 * query (required) - This should be the prefix being queried. (I.e. '1.2.0.0/16' or '1.2.3.0/24')
 * apikey (required) - The API key assigned to you by Open Source Context (more info at https://oscontext.com)
 * size (optional) - The number of results you would like returned, up to 100,000. The default is 100.
-* url (optional) - The base URI for the pDNS endpoint. The default setting will be correct for anyone who has not been assigned a custom endpoint. If you have any questions about this field, please contact your Open Source Context representative or `support@oscontext.com`.
+* url (optional) - The base URI for the pDNS endpoint. The default setting will be correct for anyone who has not been assigned a custom endpoint. If you have any questions about this field, please contact your Open Source Context representative or support@oscontext.com.
 * sort (optional) - The field and order you would like the results sorted by. The default is last_seen:desc
 * fields (optional) - This is where the user can specify the fields they want returned in the results. This field should only be used if specifying the `mnl` (manual) return type.
 * rt (optional) - This is where the user can specify the output type they want returned. This includes the `sml`, `med`, `lrg`, `mnl`, or `dbg` types. If specifying `mnl`, make sure you provide the listed fields in the `fields` option.
@@ -213,7 +213,7 @@ This method allows for the simple querying of a specific BGP event type.
 * query (required) - This should be the event type being queried. (I.e. 'bgp-new-prefix' or 'bgp-withdrawn-prefix')
 * apikey (required) - The API key assigned to you by Open Source Context (more info at https://oscontext.com)
 * size (optional) - The number of results you would like returned, up to 100,000. The default is 100.
-* url (optional) - The base URI for the pDNS endpoint. The default setting will be correct for anyone who has not been assigned a custom endpoint. If you have any questions about this field, please contact your Open Source Context representative or `support@oscontext.com`.
+* url (optional) - The base URI for the pDNS endpoint. The default setting will be correct for anyone who has not been assigned a custom endpoint. If you have any questions about this field, please contact your Open Source Context representative or support@oscontext.com.
 * sort (optional) - The field and order you would like the results sorted by. The default is last_seen:desc
 * fields (optional) - This is where the user can specify the fields they want returned in the results. This field should only be used if specifying the `mnl` (manual) return type.
 * rt (optional) - This is where the user can specify the output type they want returned. This includes the `sml`, `med`, `lrg`, `mnl`, or `dbg` types. If specifying `mnl`, make sure you provide the listed fields in the `fields` option.
@@ -234,7 +234,7 @@ This method allows for the complex querying of the bgpevents endpoint using luce
 * query (required) - This should be the event type being queried. (I.e. 'asn:12345 AND first_seen:2022-01-01' or 'asn:12345 AND event_type:bgp-different-origin')
 * apikey (required) - The API key assigned to you by Open Source Context (more info at https://oscontext.com)
 * size (optional) - The number of results you would like returned, up to 100,000. The default is 100.
-* url (optional) - The base URI for the pDNS endpoint. The default setting will be correct for anyone who has not been assigned a custom endpoint. If you have any questions about this field, please contact your Open Source Context representative or `support@oscontext.com`.
+* url (optional) - The base URI for the pDNS endpoint. The default setting will be correct for anyone who has not been assigned a custom endpoint. If you have any questions about this field, please contact your Open Source Context representative or support@oscontext.com.
 * sort (optional) - The field and order you would like the results sorted by. The default is last_seen:desc
 * fields (optional) - This is where the user can specify the fields they want returned in the results. This field should only be used if specifying the `mnl` (manual) return type.
 * rt (optional) - This is where the user can specify the output type they want returned. This includes the `sml`, `med`, `lrg`, `mnl`, or `dbg` types. If specifying `mnl`, make sure you provide the listed fields in the `fields` option.
