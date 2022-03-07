@@ -261,7 +261,7 @@ class oscQuery:
         mnl
         --------
         The manual option will bring back only the specified fields in the
-        fields argument of the objuct.
+        fields argument of the object.
 
         dbg
         --------
