@@ -258,7 +258,7 @@ Examples:
 * `oscQuery.b_et_query('asn:12345 AND different_asn:23456',<api_key>,size=5,fields='first_seen,last_seen',fields='mnl')`
 
 ## Notes:
-This is not intended to be an exhaustive guid to searching the OSC API. If you need more assistance, please contact support@oscontext.com and someone will be glad to assist you.
+This is not intended to be an exhaustive guide to searching the OSC API. If you need more assistance, please contact support@oscontext.com and someone will be glad to assist you.
 
 Open Source Context offers training to almost any orginization (not just customers) on how to improve security operations through the use of increased knowledge, open source tooling, automation, passiveDNS and passiveBGP. Although the training is given using the OSC API and tooling, the concepts taught are applicable across any reliable pDNS or pBGP data set.
 
@@ -266,4 +266,4 @@ Open Source Context offers training to almost any orginization (not just custome
 OSC indends to maintain and improve this library. Things on the roadmap are:
 
 * Allow user to specify maximum number of queries and/or results in pagniated queries.
-* Select CSV, TSV, LDJSON, or table formated results 
+* Select CSV, TSV, LDJSON, or table formated results
