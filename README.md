@@ -1,4 +1,4 @@
-![alt text](https://blog.oscontext.io/content/images/2022/03/city1.png)
+![alt text](https://blog.oscontext.io/content/images/2022/03/city2.png)
 # Open Source Context Python Library (PyCurl)
 
 ### This project provides users with a common code base to use when interacting with the Open Source Context API using Python and PyCurl
