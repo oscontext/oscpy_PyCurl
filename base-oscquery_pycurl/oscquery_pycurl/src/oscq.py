@@ -210,10 +210,23 @@ class oscQuery:
         res_curl.setopt(res_curl.HTTPHEADER, headers)
         res_curl.setopt(res_curl.WRITEDATA, buffer)
         res_curl.setopt(res_curl.ENCODING, b"br,deflate,gzip")
-        res_curl.perform()
+        try:
+            res_curl.perform()
+        except Exception as e:
+            mye = dict()
+            mye['error'] = e
+            res_curl.close()
+            return mye
         res_curl.close()
         b = buffer.getvalue()
-        jsonResp = json.loads(b)
+        try:
+            jsonResp = json.loads(b)
+        except Exception as e:
+            mye = dict()
+            mye['error'] = b
+            return mye
+
+        return jsonResp
 
         return jsonResp
 
@@ -316,10 +329,20 @@ class oscQuery:
         res_curl.setopt(res_curl.HTTPHEADER, headers)
         res_curl.setopt(res_curl.WRITEDATA, buffer)
         res_curl.setopt(res_curl.ENCODING, b"br,deflate,gzip")
-        res_curl.perform()
+        try:
+            res_curl.perform()
+        except Exception as e:
+            print(e)
+            res_curl.close()
+            sys.exit(1)
         res_curl.close()
         b = buffer.getvalue()
-        jsonResp = json.loads(b)
+        try:
+            jsonResp = json.loads(b)
+        except Exception as e:
+            print(b)
+            print(e)
+            sys.exit(1)
 
         return jsonResp
 
