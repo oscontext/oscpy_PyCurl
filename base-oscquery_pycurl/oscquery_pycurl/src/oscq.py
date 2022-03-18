@@ -213,20 +213,19 @@ class oscQuery:
         try:
             res_curl.perform()
         except Exception as e:
-            mye = dict()
-            mye['error'] = e
+            jsonResp = dict()
+            jsonResp['error'] = e
             res_curl.close()
-            return mye
+            return json.loads(jsonResp)
         res_curl.close()
         b = buffer.getvalue()
         try:
             jsonResp = json.loads(b)
         except Exception as e:
-            mye = dict()
-            mye['error'] = b
-            return mye
-
-        return jsonResp
+            jsonResp = dict()
+            jsonResp['json_err'] = e
+            jsonResp['ret_data'] = b
+            return json.loads(jsonResp)
 
         return jsonResp
 
@@ -332,17 +331,19 @@ class oscQuery:
         try:
             res_curl.perform()
         except Exception as e:
-            print(e)
+            jsonResp = dict()
+            jsonResp['error'] = e
             res_curl.close()
-            sys.exit(1)
+            return json.loads(jsonResp)
         res_curl.close()
         b = buffer.getvalue()
         try:
             jsonResp = json.loads(b)
         except Exception as e:
-            print(b)
-            print(e)
-            sys.exit(1)
+            jsonResp = dict()
+            jsonResp['json_err'] = e
+            jsonResp['ret_data'] = b
+            return json.loads(jsonResp)
 
         return jsonResp
 
