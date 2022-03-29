@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/oscquery_pycurl.egg-info/PKG-INFO
+src/oscquery_pycurl.egg-info/SOURCES.txt
+src/oscquery_pycurl.egg-info/dependency_links.txt
+src/oscquery_pycurl.egg-info/requires.txt
+src/oscquery_pycurl.egg-info/top_level.txt

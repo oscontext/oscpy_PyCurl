@@ -1,28 +1,33 @@
-from setuptools import setup, find_packages
+import setuptools
 
-VERSION = '0.0.1'
-DESCRIPTION = 'OSC PyCurl based query'
+with open("README.md", "r", encoding="utf-8") as fh:
+    long_description = fh.read()
+
 LONG_DESCRIPTION = 'PyCurl based interactions with the Open Source Context APIs'
 
-# Setting up
-setup(
-       # the name must match the folder name 'verysimplemodule'
-        name="oscquery_pycurl",
-        version=VERSION,
-        author="Open Source Context",
-        author_email="<support@oscontext.com>",
-        description=DESCRIPTION,
-        long_description=LONG_DESCRIPTION,
-        packages=find_packages(),
-        install_requires=['pycurl'],
-
-        keywords=['python', 'OSC', 'pycurl'],
-        classifiers= [
-            "Development Status :: 3 - Alpha",
-            "Intended Audience :: Information Security",
-            "Programming Language :: Python :: 3",
-            "Operating System :: MacOS :: MacOS X",
-            "Operating System :: Microsoft :: Windows",
-            "Operating System :: Linux :: Linux",
-        ]
+setuptools.setup(
+    name="oscquery-pycurl",
+    version="0.0.2",
+    author="Open Source Context",
+    author_email="support.tech@oscontext.com",
+    description="OSC PyCurl based query",
+    long_description=long_description,
+    long_description_content_type="text/markdown",
+    url="https://github.com/pypa/sampleproject",
+    project_urls={
+        "Bug Tracker": "https://github.com/pypa/oscquery_pycurl/issues",
+    },
+    keywords=['python', 'OSC', 'pycurl'],
+    install_requires=['pycurl'],
+    classifiers=[
+        "Development Status :: 3 - Alpha",
+        "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+        "Intended Audience :: Information Technology",
+        "Programming Language :: Python :: 3",
+        "Operating System :: MacOS :: MacOS X",
+        "Operating System :: POSIX :: Linux",
+    ],
+    package_dir={"": "src"},
+    packages=setuptools.find_packages(where="src"),
+    python_requires=">=3.6",
 )
